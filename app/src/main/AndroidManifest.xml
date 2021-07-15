@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Inventory">
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".ProfitActivity"></activity>
+        <activity android:name=".TaxActivity" />
+        <activity android:name=".PriceActivity" />
+        <activity android:name=".LoginActivity" />
         <activity android:name=".ProductsActivity" />
         <activity android:name=".HomePageActivity" />
         <activity android:name=".MainActivity">

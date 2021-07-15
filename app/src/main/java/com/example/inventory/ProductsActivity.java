@@ -15,11 +15,11 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class ProductsActivity extends AppCompatActivity {
-
-    private ArrayList<String> data= new ArrayList<String>();
-    private ArrayList<String> data1= new ArrayList<String>();
-    private ArrayList<String> data2= new ArrayList<String>();
-    private ArrayList<String> data3= new ArrayList<String>();
+//serves as temp storage
+    private ArrayList<String> nameData= new ArrayList<String>();
+    private ArrayList<String> priceData= new ArrayList<String>();
+    private ArrayList<String> qtyData= new ArrayList<String>();
+    private ArrayList<String> totalData= new ArrayList<String>();
 
     private TableLayout table;
 
@@ -33,7 +33,7 @@ public class ProductsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_products);
 
 
-
+//input
         ed1= findViewById(R.id.ed1);
         ed2= findViewById(R.id.ed2);
         ed3= findViewById(R.id.ed3);
@@ -64,7 +64,7 @@ public class ProductsActivity extends AppCompatActivity {
                 ed6.setText(String.valueOf(bal));
             }
         });
-
+//click button
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,17 +77,18 @@ public class ProductsActivity extends AppCompatActivity {
     }
 
     public void add() {
+//for calculation
         int tot;
 
         String prodname = ed1.getText().toString();
         int price = Integer.parseInt(ed2.getText().toString());
         int qty = Integer.parseInt(ed3.getText().toString());
         tot = price * qty;
-
-        data.add(prodname);
-        data1.add(String.valueOf(price));
-        data2.add(String.valueOf(qty));
-        data3.add(String.valueOf(tot));
+//shows output on table
+        nameData.add(prodname);
+        priceData.add(String.valueOf(price));
+        qtyData.add(String.valueOf(qty));
+        totalData.add(String.valueOf(tot));
 
         TableLayout table = (TableLayout) findViewById(R.id.tb1);
 
@@ -102,11 +103,11 @@ public class ProductsActivity extends AppCompatActivity {
         int sum = 0;
 
 
-        for (int i = 0; i < data.size(); i++) {
-            String pname = data.get(i);
-            String prc = data1.get(i);
-            String qtyy = data2.get(i);
-            total = data3.get(i);
+        for (int i = 0; i < nameData.size(); i++) {
+            String pname = nameData.get(i);
+            String prc = priceData.get(i);
+            String qtyy = qtyData.get(i);
+            total = totalData.get(i);
 
 
             t1.setText(pname);
@@ -114,7 +115,7 @@ public class ProductsActivity extends AppCompatActivity {
             t3.setText(qtyy);
             t4.setText(total);
 
-            sum = sum + Integer.parseInt(data3.get(i).toString());
+            sum = sum + Integer.parseInt(totalData.get(i).toString());
 
 
         }
