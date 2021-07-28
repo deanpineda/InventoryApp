@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EB7D46"
+    android:padding="10dp"
+    tools:background="#EB7D46"
+    tools:context=".CalculatorActivity">
+
+    <Button
+        android:id="@+id/buttonDiscount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="DISCOUNT CALCULATOR"
+        android:textSize="24dp"
+        app:backgroundTint="#05406C"
+        app:layout_constraintBottom_toTopOf="@+id/buttonProfit"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <Button
+        android:id="@+id/buttonProfit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonDiscount"
+        android:layout_marginBottom="16dp"
+        android:text="PROFIT CALCULATOR "
+        android:textSize="24dp"
+        app:backgroundTint="#05406C"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTax"
+        tools:layout_editor_absoluteX="16dp" />
+
+
+    <Button
+        android:id="@+id/buttonTax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="208dp"
+        android:text="TAX CALCULATOR"
+        android:textSize="24dp"
+        app:backgroundTint="#05406C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

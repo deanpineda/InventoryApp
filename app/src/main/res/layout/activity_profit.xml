@@ -6,21 +6,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:padding="10dp"
     tools:context=".ProfitActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Profit Calculator"
-            android:textColor="@color/black"
-            android:gravity="center"/>
-
-    </LinearLayout>
+        android:orientation="horizontal" />
 
 
     <LinearLayout
@@ -31,11 +23,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:text="Total Sales"/>
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:id="@+id/totalsalesText"
             android:ems="10"/>
     </LinearLayout>
@@ -48,11 +42,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:text="Total Costs"/>
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:id="@+id/totalcostsText"
             android:ems="10"/>
     </LinearLayout>
@@ -65,17 +61,19 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:text="Total Profit"/>
 
         <EditText
+            android:id="@+id/totalprofitText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:layout_margin="10sp"
-            android:background="@color/design_default_color_primary_dark"
-            android:id="@+id/totalprofitText"
-            android:textColor="#fff"
+            android:background="#05406C"
+            android:ems="10"
             android:enabled="false"
-            android:ems="10"/>
+            android:textColor="#fff" />
     </LinearLayout>
 
     <LinearLayout
@@ -84,11 +82,14 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/enterBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/enterBtn"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/design_default_color_primary"
             android:text="Enter"
-            android:background="@color/design_default_color_primary"/>
+            app:backgroundTint="#EB7D46" />
 
 </LinearLayout>
 </LinearLayout>

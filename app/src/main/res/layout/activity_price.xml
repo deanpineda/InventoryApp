@@ -6,20 +6,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:padding="10dp"
     tools:context=".PriceActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sales Price Calculator"
-            android:textColor="@color/black"
-            android:gravity="center"/>
-    </LinearLayout>
+        android:orientation="horizontal"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -29,12 +22,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:text="Product Price" />
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/priceText"
+            android:textSize="20dp"
             android:ems="10"/>
     </LinearLayout>
 
@@ -46,12 +41,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Percentage Discount %" />
+            android:textSize="20dp"
+            android:text="Discount %" />
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/percentText"
+            android:textSize="20dp"
             android:ems="10"/>
     </LinearLayout>
 
@@ -63,17 +60,19 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:text="Total Price"/>
 
         <EditText
+            android:id="@+id/totalText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
-            android:background="@color/design_default_color_primary_dark"
-            android:id="@+id/totalText"
-            android:textColor="#fff"
+            android:textSize="20dp"
+            android:background="#05406C"
+            android:ems="10"
             android:enabled="false"
-            android:ems="10"/>
+            android:textColor="#fff" />
     </LinearLayout>
 
     <LinearLayout
@@ -82,11 +81,14 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/enterBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/enterBtn"
+            android:background="#05406C"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
             android:text="Enter"
-            android:background="@color/design_default_color_primary"/>
+            app:backgroundTint="#EB7D46" />
     </LinearLayout>
 
 

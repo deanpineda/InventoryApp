@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".InventoryActivity">
+
+    <TextView
+        android:id="@+id/productTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter product details below"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/prodId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product ID"
+        android:textSize="20dp"
+        android:layout_below="@+id/productTitle"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/prodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textSize="20dp"
+        android:layout_below="@+id/prodId"
+        android:inputType="textPersonName"
+        />
+    <EditText
+        android:id="@+id/prodQty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantity"
+        android:textSize="20dp"
+        android:layout_below="@+id/prodName"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/prodPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:textSize="20dp"
+        android:layout_below="@+id/prodQty"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/prodCateg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Category"
+        android:textSize="20dp"
+        android:layout_below="@+id/prodPrice"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/prodDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:textSize="20dp"
+        android:layout_below="@+id/prodCateg"
+        android:inputType="text"
+        />
+
+    <Button
+        android:id="@+id/bInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prodDesc"
+        android:layout_marginTop="2dp"
+        android:text="Insert New Data"
+        android:textSize="20dp"
+        app:backgroundTint="#EB7D46" />
+
+    <Button
+        android:id="@+id/bUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bInsert"
+        android:layout_marginTop="2dp"
+        android:text="Update Existing Data"
+        android:textSize="20dp"
+        app:backgroundTint="#EB7D46" />
+
+    <Button
+        android:id="@+id/bDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bUpdate"
+        android:layout_marginTop="2dp"
+        android:text="Delete Existing Data"
+        android:textSize="20dp"
+        app:backgroundTint="#EB7D46" />
+
+    <Button
+        android:id="@+id/bView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bDelete"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="30dp"
+        android:text="View Existing Data"
+        android:textSize="20dp"
+        app:backgroundTint="#EB7D46" />
+
+
+
+</RelativeLayout>

@@ -36,6 +36,7 @@ public class PriceActivity extends AppCompatActivity {
             }
         });
 
+
     }
 
 }

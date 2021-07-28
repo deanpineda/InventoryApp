@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EB7D46"
+    android:visibility="visible"
+    tools:context=".DashboardActivity"
+    tools:visibility="visible">
+
+    <ImageButton
+        android:id="@+id/suppliersButton"
+        android:layout_width="154dp"
+        android:layout_height="154dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/calculatorButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/suppliers1" />
+
+    <ImageButton
+        android:id="@+id/posButton"
+        android:layout_width="154dp"
+        android:layout_height="154dp"
+        android:layout_marginBottom="56dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/logoutButton"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/p0s" />
+
+    <ImageButton
+        android:id="@+id/customersButton"
+        android:layout_width="154dp"
+        android:layout_height="154dp"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/productsButton"
+        app:layout_constraintEnd_toStartOf="@+id/suppliersButton"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/customers1" />
+
+    <ImageButton
+        android:id="@+id/productsButton"
+        android:layout_width="154dp"
+        android:layout_height="154dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="28dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/posButton"
+        app:layout_constraintEnd_toStartOf="@+id/calculatorButton"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/products1" />
+
+    <ImageButton
+        android:id="@+id/calculatorButton"
+        android:layout_width="154dp"
+        android:layout_height="154dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="28dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/logoutButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/calculator1" />
+
+    <ImageButton
+        android:id="@+id/logoutButton"
+        android:layout_width="154dp"
+        android:layout_height="154dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="56dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/logout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".ProductsActivity">
@@ -16,9 +17,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Product Inventory"
+            android:gravity="center"
+            android:text="Point of Sale"
             android:textColor="@color/black"
-            android:gravity="center"/>
+            android:textSize="24dp"/>
 
 </LinearLayout>
 
@@ -29,8 +31,9 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="18dp"
             android:text="Product Name"/>
 
         <EditText
@@ -46,8 +49,9 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="18dp"
             android:text="Price"/>
 
         <EditText
@@ -63,8 +67,9 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="18dp"
             android:text="Quantity"/>
 
         <EditText
@@ -80,19 +85,20 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="18dp"
             android:text="Subtotal"/>
 
         <EditText
+            android:id="@+id/txtsub"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
-            android:background="@color/design_default_color_primary_dark"
-            android:id="@+id/txtsub"
-            android:textColor="#fff"
+            android:background="#05406C"
+            android:ems="10"
             android:enabled="false"
-            android:ems="10"/>
+            android:textColor="#fff" />
     </LinearLayout>
 
     <LinearLayout
@@ -101,19 +107,20 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="18dp"
             android:text="Payment"/>
 
         <EditText
+            android:id="@+id/txtpay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
-            android:background="@color/design_default_color_primary_dark"
-            android:id="@+id/txtpay"
-            android:textColor="#fff"
+            android:background="#05406C"
+            android:ems="10"
 
-            android:ems="10"/>
+            android:textColor="#fff" />
     </LinearLayout>
 
     <LinearLayout
@@ -122,19 +129,20 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="18dp"
             android:text="Balance"/>
 
         <EditText
+            android:id="@+id/txtbal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
-            android:background="@color/design_default_color_primary_dark"
-            android:id="@+id/txtbal"
-            android:textColor="#fff"
+            android:background="#05406C"
+            android:ems="10"
             android:enabled="false"
-            android:ems="10"/>
+            android:textColor="#fff" />
     </LinearLayout>
 
     <LinearLayout
@@ -143,11 +151,13 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btn1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btn1"
+            android:textSize="18dp"
+            android:background="@color/design_default_color_primary"
             android:text="Add"
-            android:background="@color/design_default_color_primary"/>
+            app:backgroundTint="#EB7D46" />
 </LinearLayout>
 
     <LinearLayout

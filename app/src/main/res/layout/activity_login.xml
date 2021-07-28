@@ -4,55 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="#EB7D46"
     tools:context=".LoginActivity">
 
     <EditText
         android:id="@+id/etName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="329dp"
+        android:layout_height="27dp"
+        android:background="@color/cardview_light_background"
         android:ems="10"
         android:hint="Enter username"
-        android:background="@color/cardview_light_background"
-        android:textColor="@color/black"
+        android:textSize="24dp"
         android:inputType="textPersonName"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.201" />
+        app:layout_constraintVertical_bias="0.482" />
 
     <EditText
         android:id="@+id/etPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="330dp"
+        android:layout_height="26dp"
+        android:background="@color/cardview_light_background"
         android:ems="10"
         android:hint="Enter Password"
-        android:background="@color/cardview_light_background"
-        android:textColor="@color/black"
+        android:textSize="24dp"
         android:inputType="textPassword"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etName"
-        app:layout_constraintVertical_bias="0.059" />
+        app:layout_constraintVertical_bias="0.067" />
 
     <Button
         android:id="@+id/btnLogin"
+        style="@style/Widget.AppCompat.Button.Small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/cardview_light_background"
+        android:background="#EB7D46"
         android:text="Login"
+        android:textSize="20dp"
         android:textColor="@color/white"
-        app:backgroundTint="#7AFFFFFF"
+        app:backgroundTint="#05406C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPassword"
-        app:layout_constraintVertical_bias="0.121" />
+        app:layout_constraintVertical_bias="0.175" />
 
     <TextView
         android:id="@+id/tvAttemptsInfo"
@@ -62,8 +66,19 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.431"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin"
-        app:layout_constraintVertical_bias="0.077" />
+        app:layout_constraintVertical_bias="0.28" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="203dp"
+        android:layout_height="185dp"
+        app:layout_constraintBottom_toTopOf="@+id/etName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.554"
+        app:srcCompat="@drawable/logo3" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

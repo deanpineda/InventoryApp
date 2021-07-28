@@ -61,7 +61,7 @@ public class LoginActivity extends AppCompatActivity {
                     }else{
                         Toast.makeText(LoginActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
                         //add code to new activity
-                        Intent intent=new Intent(LoginActivity.this, HomePageActivity.class);
+                        Intent intent=new Intent(LoginActivity.this, DashboardActivity.class);
                         startActivity(intent);
                     }
 

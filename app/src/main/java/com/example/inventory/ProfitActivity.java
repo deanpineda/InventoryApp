@@ -30,8 +30,9 @@ public class ProfitActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int number1 = Integer.parseInt(totalsalesText2.getText().toString());
                 int number2 = Integer.parseInt(totalcostsText2.getText().toString());
-                int total = number1 - number2;
                 //formula for total profit
+                int total = number1 - number2;
+
                 totalprofitText2.setText(String.valueOf(total));
                 //conditional statement for notifying if you have insufficient funds or not
                 if (total <= 0.0) {

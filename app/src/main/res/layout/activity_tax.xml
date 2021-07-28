@@ -6,20 +6,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:padding="10dp"
     tools:context=".TaxActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sales Tax Calculator"
-            android:textColor="@color/black"
-            android:gravity="center"/>
-    </LinearLayout>
+        android:orientation="horizontal"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -29,11 +22,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:text="Pre-Tax Price" />
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:id="@+id/pretaxText"
             android:ems="10"/>
     </LinearLayout>
@@ -46,11 +41,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:text="Tax Rate %" />
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:id="@+id/taxrateText"
             android:ems="10"/>
     </LinearLayout>
@@ -63,17 +60,19 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:text="Total Tax"/>
 
         <EditText
+            android:id="@+id/totaltaxText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:layout_margin="10sp"
-            android:background="@color/design_default_color_primary_dark"
-            android:id="@+id/totaltaxText"
-            android:textColor="#fff"
+            android:background="#05406C"
+            android:ems="10"
             android:enabled="false"
-            android:ems="10"/>
+            android:textColor="#fff" />
     </LinearLayout>
 
     <LinearLayout
@@ -83,18 +82,20 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Total Price (w/ tax)"/>
+            android:layout_height="wrap_content" android:textSize="20dp"
+
+            android:text="Total Price"/>
 
         <EditText
+            android:id="@+id/totalpriceText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20dp"
             android:layout_margin="10sp"
-            android:background="@color/design_default_color_primary_dark"
-            android:id="@+id/totalpriceText"
-            android:textColor="#fff"
+            android:background="#05406C"
+            android:ems="10"
             android:enabled="false"
-            android:ems="10"/>
+            android:textColor="#fff" />
     </LinearLayout>
 
     <LinearLayout
@@ -103,11 +104,14 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/enterBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/enterBtn"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:background="@color/design_default_color_primary"
             android:text="Enter"
-            android:background="@color/design_default_color_primary"/>
+            app:backgroundTint="#EB7D46" />
     </LinearLayout>
 
 
